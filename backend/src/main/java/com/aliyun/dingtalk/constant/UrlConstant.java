@@ -50,4 +50,34 @@ public class UrlConstant {
      * 获取部门成员信息
      */
     public static final String GET_USER_LIST_BY_DEPT_URL = "https://oapi.dingtalk.com/topapi/v2/user/list";
+
+    /**
+     * 根据唯一任务ID task_id，调用服务端API-获取工作通知消息的发送进度接口，获取发送进度
+     */
+    public static final String GET_SEND_PROGRESS_BY_TASK_ID = "https://oapi.dingtalk.com/topapi/message/corpconversation/getsendprogress";
+
+    /**
+     * 根据唯一任务ID task_id，调用服务端API-获取工作通知消息的发送结果接口，查看发送结果
+     */
+    public static final String GET_SEND_RESULT_BY_TASK_ID = "https://oapi.dingtalk.com/topapi/message/corpconversation/getsendresult";
+
+    /**
+     * 根据唯一任务ID task_id，调用服务端API-更新工作通知状态栏接口，更新工作通知
+     * 审批状态颜色参考
+     * 已同意 0xFF78C06E
+     * 已拒绝 0xFFF65E5E
+     * 已撤销 0xFF858E99
+     * 待审批 0xFFFF9D46
+     */
+    public static final String UPDATE_STATUS_BY_TASK_ID = "https://oapi.dingtalk.com/topapi/message/corpconversation/status_bar/update";
+
+    /**
+     * 根据唯一任务ID task_id，调用服务端API-撤回工作通知消息接口，撤回工作通知
+     */
+    public static final String RECALL_NOTICE_BY_TASK_ID = "https://oapi.dingtalk.com/topapi/message/corpconversation/recall";
+
+    /**
+     * 上传媒体文件（图片，语音，文件）--获取 media_id
+     */
+    public static final String GET_MEDIA_ID_UPLOAD_MEDIA = "https://oapi.dingtalk.com/media/upload";
 }
