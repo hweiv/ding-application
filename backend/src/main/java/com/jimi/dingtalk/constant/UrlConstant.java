@@ -25,7 +25,6 @@ public class UrlConstant {
      */
     public static final String USER_GET_URL = "https://oapi.dingtalk.com/topapi/v2/user/get";
 
-
     /**
      * 异步发送工作通知url
      */
@@ -80,4 +79,6 @@ public class UrlConstant {
      * 根据唯一任务ID task_id，调用服务端API-撤回工作通知消息接口，撤回工作通知
      */
     public static final String RECALL_NOTICE_BY_TASK_ID = "https://oapi.dingtalk.com/topapi/message/corpconversation/recall";
+
+
 }

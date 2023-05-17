@@ -21,7 +21,7 @@ public class TestScheduledTask {
      * @Scheduled(cron = "30 59 0/1 * * ?")
      * 秒、分、时、日、月、周
      */
-    @Scheduled(cron = "0 0/1 * * * ?")
+//    @Scheduled(cron = "0 0/1 * * * ?")
 //    @Scheduled(initialDelay = 1000L, fixedRate = 5 * 60 * 1000)
     public void execute1() {
         logger.info("TestScheduledTask-pushBankPayment start run");
@@ -34,7 +34,7 @@ public class TestScheduledTask {
         }
     }
 
-    @Scheduled(cron = "0 0/1 * * * ?")
+//    @Scheduled(cron = "0 0/1 * * * ?")
 //    @Scheduled(initialDelay = 1000L, fixedRate = 5 * 60 * 1000)
     public void execute2() {
         logger.info("TestScheduledTask-pushBankPayment start run");

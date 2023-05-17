@@ -10,6 +10,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.websocket.server.PathParam;
+
 /**
  * 钉钉消息通知
  */
@@ -50,7 +52,7 @@ public class MessageNotificationController {
      * @return
      */
     @GetMapping("/getReadList")
-    public ApiResult getReadList(@PathVariable String dingAppCode, @PathVariable String messageId) {
+    public ApiResult getReadList(@PathParam("dingAppCode") String dingAppCode, @PathParam("messageId") String messageId) {
         log.info("MessageNotificationController#getReadList param-messageId:{}，dingAppCode:{}", messageId, dingAppCode);
         return ApiResult.success(messageNotificationService.getReadList(dingAppCode, messageId));
 
